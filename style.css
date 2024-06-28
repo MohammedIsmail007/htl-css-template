@@ -1,0 +1,128 @@
+nav div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  color: black !important;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav button {
+  padding: 5px;
+  border: 2px solid white;
+  color: rgb(253, 247, 247);
+  background-color: rgb(3, 92, 208);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 50px;
+}
+
+.rightbox,
+.leftbox {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.rightbox button {
+  border-radius: 20px;
+  padding: 8px 15px;
+  color: white;
+  background-color: rgb(3, 92, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.leftbox button {
+  border-radius: 20px;
+  padding: 8px 15px;
+  color: white;
+  background-color: rgb(3, 92, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: linear 0.5s;
+}
+
+.leftbox button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+#countrycode,
+input {
+  justify-content: center;
+  width: 75%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.formtag {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.formdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(200, 200, 200);
+  margin: 5px;
+  flex-direction: column;
+}
+body {
+  /* background-image: linear-gradient(
+    to top left,
+    rgb(32, 218, 233),
+    rgb(40, 21, 236),rgba(131, 58, 78, 0.795)
+  ); */
+  background-image: url(wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  /* animation-name: animate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+*/
+}
+
+@keyframes animate {
+  from {
+    background-color: brown;
+  }
+  to {
+    background-color: rgb(3, 92, 208);
+  }
+}
